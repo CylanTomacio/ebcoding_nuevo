@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/a0f89bdc35.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--Header y navegación del sitio -->
+    <!--Inicio header y navegación del sitio -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
             <img class="logoEbcoding" src="img/eb-logo.png" alt="Logo de ebcoding">
@@ -43,6 +43,64 @@
         </div>
       </nav>
       <!-- Final del header y navegación del sitio -->
+
+      <!-- Inicio sección principal -->
+
+      <div class="inicio container-fluid">
+        <article class="row align-items-lg-center justify-content-lg-center">
+          <div class="col-lg-6 col-sm-12 align-self-end align-self-sm-end align-self-lg-center">
+              <img class="fotoInicio" src="img/elvis2.jpg" alt="Foto de perfil">
+              <h2>Elvis Briceño</h2>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro optio rem reiciendis deleniti commodi sapiente libero minima voluptate nam veritatis fugit, doloremque harum eveniet eum aperiam voluptatibus ut quis reprehenderit!</p>
+            <button class="boton" type="button" data-toggle="modal" data-target="#exampleModal">Contactar</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Formulario de contacto</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    <form role="form" method="POST" action="">
+                      <input type="hidden" name="_token" value="">
+                      <div class="form-group">
+                        <label class="control-label">Nombre<span class="requerido">*</span></label>
+                        <div>
+                            <input type="text" class="form-control input-lg" name="nombre" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Apellido<span class="requerido">*</span></label>
+                        <div>
+                            <input type="text" class="form-control input-lg" name="apellido" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="control-label">Correo electrónico<span class="requerido">*</span></label>
+                          <div>
+                              <input type="email" class="form-control input-lg" name="email" placeholder="tucorreo@ejemplo.com" required>
+                          </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="boton limpiar" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="boton">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    <!-- Final sección principal -->
+
       <!-- Inicio del footer -->
       <footer id="footer">
         <div class="container">
