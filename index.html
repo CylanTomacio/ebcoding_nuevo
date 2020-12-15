@@ -43,104 +43,292 @@
             </div>
         </nav><!-- Final del header y navegación del sitio -->
 
-        <!-- Inicio sección principal -->
-        <div class="inicio container-fluid">
-            <article class="row align-items-lg-center justify-content-lg-center">
-                <div class="col-lg-6 col-sm-12 align-self-end align-self-sm-end align-self-lg-center">
-                    <img class="fotoInicio" src="img/elvis2.jpg" alt="Foto de perfil">
-                    <h2>Elvis Briceño</h2>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro optio rem reiciendis deleniti commodi sapiente libero minima voluptate nam veritatis fugit, doloremque harum eveniet eum aperiam voluptatibus ut quis reprehenderit!</p>
-                <button class="boton" type="button" data-toggle="modal" data-target="#exampleModal">Contactar</button>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel">Formulario de contacto</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+        <!-- Inicio del contenedor principal -->
+        <div class="container-fluid">
+            <!-- Inicio seccion principal-->
+            <article id="inicio" class="row">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/fondo_main.jpg" class="fondo d-block w-100" alt="...">
                         </div>
-                        <div class="modal-body text-left">
-                        <form role="form" method="POST" action="">
-                            <input type="hidden" name="_token" value="">
-                            <div class="form-group">
-                            <label class="control-label">Nombre<span class="requerido">*</span></label>
-                            <div>
-                                <input type="text" class="form-control input-lg" name="nombre" required>
-                            </div>
-                            </div>
-                            <div class="form-group">
-                            <label class="control-label">Apellido<span class="requerido">*</span></label>
-                            <div>
-                                <input type="text" class="form-control input-lg" name="apellido" required>
-                            </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Correo electrónico<span class="requerido">*</span></label>
-                                <div>
-                                    <input type="email" class="form-control input-lg" name="email" placeholder="tucorreo@ejemplo.com" required>
+                        <div class="overlay ">
+                            <div class="container-fluid contenido p-4">
+                                <div class="row fila align-items-center">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <img class="fotoInicio" src="img/elvis2.jpg" alt="Foto de perfil">
+                                        <h2>Elvis Briceño</h2>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro optio rem reiciendis deleniti commodi sapiente libero minima voluptate nam veritatis fugit, doloremque harum eveniet eum aperiam voluptatibus ut quis reprehenderit!</p>
+                                        <button class="boton" type="button" data-toggle="modal" data-target="#exampleModal">Contactar</button>
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h4 class="modal-title" id="exampleModalLabel">Formulario de contacto</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body text-left">
+                                                <form role="form" method="POST" action="">
+                                                    <input type="hidden" name="_token" value="">
+                                                    <div class="form-group">
+                                                    <label class="control-label">Nombre<span class="requerido">*</span></label>
+                                                    <div>
+                                                        <input type="text" class="form-control input-lg" name="nombre" required>
+                                                    </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                    <label class="control-label">Apellido<span class="requerido">*</span></label>
+                                                    <div>
+                                                        <input type="text" class="form-control input-lg" name="apellido" required>
+                                                    </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Correo electrónico<span class="requerido">*</span></label>
+                                                        <div>
+                                                            <input type="email" class="form-control input-lg" name="email" placeholder="tucorreo@ejemplo.com" required>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="boton limpiar" data-dismiss="modal">Cancelar</button>
+                                                    <button type="submit" class="boton">Enviar</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
                                 </div>
                             </div>
-                        </form>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="boton limpiar" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="boton">Enviar</button>
                         </div>
                     </div>
+                </div>
+            </article><!-- Fin seccion principal-->
+            <!-- Inicio sección tecnologias -->
+            <section id="tecnologias" class="row text-center">
+                <article class="col-md-4 tarjeta">
+                    <div class="tarjeta__cuerpo">
+                        <i class="fab fa-html5 tarjeta__icono--tamano tarjeta__icono--naranja"></i>
+                        <h5>HTML 5</h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-naranja" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
-                </div>
-                </div>
-            </article>
-        </div><!-- Final sección principal -->
+                </article>
+                <article class="col-md-4 tarjeta">
+                    <div class="tarjeta__cuerpo">
+                        <i class="fab fa-css3-alt tarjeta__icono--tamano tarjeta__icono--azul"></i>
+                        <h5>CSS 3</h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-azul" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>                        
+                    </div>
+                </article>
+                <article class="col-md-4 tarjeta">
+                    <div class="tarjeta__cuerpo">
+                        <i class="fab fa-bootstrap tarjeta__icono--tamano tarjeta__icono--morado"></i>
+                        <h5>BOOTSTRAP</h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-morado" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </article>
+            </section><!-- Final sección tecnologias -->
 
-        <div class="seccion container-fluid">
-            <section id="habilidades" class="row my-4 justify-content-lg-center">
-                <article class="col-md-4">
-                    <div class="card mb-3 tarjeta">
-                        <div class="card-body tarjeta__cuerpo">
-                            <i class="fab fa-html5 tarjeta__icono--naranja"></i>
-                            <h5 class="card-title">HTML 5</h5>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><b>85%</b></div>
+            <!-- Inicio sección perfil -->
+            <section id="perfil" class="row justify-content-lg-center">
+                <header class="col-md-12 encabezadosec">
+                    <h2 class="display-5 encabezadosec__titulo">Un poco sobre mí</h2>
+                    <p class="encabezadosec__parrafo">Desarrollador y diseñador web creativo</p>
+                </header>
+                <article class="col-md-12  m-4">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-8 text-right">
+                                <h4 class="display-5 informacion__titulo">¿Quién soy?</h4>
+                                <p class="informacion__contenido">Soy un desarrollador independiente y experimentado con amplios conocimientos en temas de informática. Me caracterizo por ser proactivo, colaborador y con rápido aprendizaje. Me gusta resolver problemas y buscar los métodos más eficientes para solucionarlos.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img class="informacion__imagen" src="img/elvis-guitarra.jpg" alt="Computador con código">
+                            </div>
+                        </div>
+                </article>
+                <article class="col-md-12  m-4">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-4">
+                            <img class="informacion__imagen" src="img/codigo.jpg" alt="Computador con código">
+                        </div>
+                        <div class="col-md-8 ">
+                            <h4 class="display-5 informacion__titulo">Detalles sobre mí</h4>
+                            <ul class="informacion__lista">
+                                <li><b>Nombre</b>: Elvis Briceño</li>
+                                <li><b>Cumpleaños</b>: 25 de septiembre</li>
+                                <li><b>Nacionalidad</b>: Venezolano</li>
+                                <li><b>País de residencia</b>: Colombia</li>
+                                <li><b>Ciudad de residencia</b>: Medellín</li>
+                            </ul>
+                        </div>
+                    </div>
+            </article>
+            </section><!-- Final sección perfil -->
+
+            <!-- Inicio sección banner -->
+            <section id="banner" class="row justify-content-lg-center">
+                <div class="col-md-12 banner__imagen">
+                </div>
+            </section><!-- Final sección banner -->
+
+             <!-- Inicio sección Conocimientos -->
+             <section id="conocimientos" class="row"><!--Contenedor padre de la seccion-->
+                <header class="col-md-12 encabezadosec"><!--Primer hijo de la seccion-->
+                    <h2 class="display-5 encabezadosec__titulo">Habilidades</h2>
+                    <p>Un poco de los conocimientos adicionales que tengo</p>
+                </header>
+
+                <article class="col-md-12"><!--Segundo hijo de la seccion-->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 conocimientos">
+                            <h4>
+                                <b>Conocimientos</b>
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-6 p-4">
+                                    <i class="fab fa-wordpress tarjeta__icono--tamano"></i>
+                                    <h4>Wordpress</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aspernatur.</p>
+                                </div>
+                                <div class="col-md-6 p-4">
+                                    <i class="fab fa-html5 tarjeta__icono--tamano tarjeta__icono--naranja"></i>
+                                    <h4>HTML 5</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aspernatur.</p>
+                                </div>
+                                <div class="col-md-6 p-4">
+                                    <i class=" fab fa-css3 tarjeta__icono--tamano tarjeta__icono--azul"></i>
+                                    <h4>CSS 3</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aspernatur.</p>
+                                </div>
+                                <div class="col-md-6 p-4"">
+                                    <i class=" fab fa-bootstrap tarjeta__icono--tamano tarjeta__icono--morado"></i>
+                                    <h4>BOOTSTRAP</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aspernatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 idiomas">
+                            <h4 class="display-5">
+                                <b>Idiomas</b>
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-12 p-4">
+                                    <h5>Inglés</h5>
+                                    <div class="w-50 progress m-auto">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>  
+                                </div>
+                                <div class="col-md-12 p-4">
+                                    <h5>Español</h5>
+                                    <div class="w-50 progress  m-auto">
+                                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>  
+                                </div>
+                                <div class="col-md-12 p-4">
+                                    <h5>Ruso</h5>
+                                    <div class="w-50 progress m-auto">
+                                        <div class="progress-bar " role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article class="col-md-4">
-                    <div class="card mb-3 tarjeta">
-                        <div class="card-body tarjeta__cuerpo">
-                            <i class="fab fa-css3-alt tarjeta__icono--azul"></i>
-                            <h5 class="card-title">CSS 3</h5>
-                            <div class="progress">
-                                <div class="progress-bar text" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><b>70%</b></div>
-                            </div>                        
+            </section><!-- Final sección conocimientos -->
+
+            <!-- Inicio sección proyectos -->
+            <section id="proyectos" class="row justify-content-lg-center"><!--Contenedor padre de la seccion-->
+                <header class="col-md-12 encabezadosec"><!--Primer hijo de la seccion-->
+                    <h2 class="display-5 encabezadosec__titulo">Certificados</h2>
+                    <p>Aquí se encuentran algunos de los certificados obtenidos en los cursos que he realizado</p>
+                </header>
+
+                <article class="col-md-12"><!--Segundo hijo de la seccion-->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card mb-3">
+                                <img src="img/certificado_programacion.jpg" class="card-img-top" alt="Certificado de programacion para principiantes">
+                                <div class="card-body">
+                                  <h5 class="card-title">Certificado de programacion para principiantes</h5>
+                                </div>
+                              </div>
                         </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3">
+                                <img src="img/certificado_bootstrap.jpg" class="card-img-top" alt="Certificado de fundamentos de bootstrap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Certificado de fundamentos de bootstrap</h5>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3">
+                                <img src="img/certificado_js.jpg" class="card-img-top" alt="Certificado de programación en javascript">
+                                <div class="card-body">
+                                  <h5 class="card-title">Certificado de programación en javascript</h5>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3">
+                                <img src="img/diploma-frontend-developer.jpg" class="card-img-top" alt="Certificado de desarrollo frontend">
+                                <div class="card-body">
+                                  <h5 class="card-title">Certificado de desarrollo frontend</h5>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3">
+                                <img src="img/diploma-prework.jpg" class="card-img-top" alt="Certificado de prework: buenas practicas">
+                                <div class="card-body">
+                                  <h5 class="card-title">Certificado de prework: buenas practicas</h5>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3">
+                                <img src="img/diploma-desbloquea-creatividad.jpg" class="card-img-top" alt="Certificado de curso para desbloquear la creatividad">
+                                <div class="card-body">
+                                  <h5 class="card-title">Certificado de curso para desbloquear la creatividad</h5>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3">
+                                <img src="img/diploma-trello.jpg" class="card-img-top" alt="Certificado de administración de actividades con Trello">
+                                <div class="card-body">
+                                  <h5 class="card-title">Certificado de administración de actividades con Trello</h5>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3">
+                                <img src="img/diploma-basico-javascript.jpg" class="card-img-top" alt="Certificado de javascript basico">
+                                <div class="card-body">
+                                  <h5 class="card-title">Certificado de javascript básico</h5>
+                                </div>
+                              </div>
+                        </div>
+                        
                     </div>
                 </article>
-                <article class="col-md-4">
-                    <div class="card mb-3 tarjeta">
-                        <div class="card-body tarjeta__cuerpo">
-                            <i class="fab fa-bootstrap tarjeta__icono--morado"></i>
-                            <h5 class="card-title">BOOTSTRAP</h5>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><b>75%</b></div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </section>
-        </div>
+            </section><!-- Final sección proyectos -->
+
+        </div><!-- Final del contenedor principal-->
+
         <!-- Inicio del footer -->
         <footer id="footer">
-            <div class="container">
-                <div class="row align-items-lg-center justify-content-lg-center">
-                    <h6 class="footer__titulo">Todos los derechos reservados - Diseñado por Elvis Briceño</h6>
-                </div>
-            </div>
+            <h6 class="footer__titulo">Todos los derechos reservados - Diseñado por Elvis Briceño</h6>
         </footer><!-- Final del footer -->
 
         <!-- Scripts de bootstrap -->
