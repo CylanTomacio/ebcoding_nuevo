@@ -1,0 +1,18 @@
+/*Diseño de seccion Perfil*/
+
+#perfil {
+    background-color: #fff;
+}
+
+.informacion__imagen {
+    object-fit: cover;
+    width: 70%;
+    box-shadow: 0px 0px 2px #000;
+}
+
+.informacion__lista {
+    list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+}

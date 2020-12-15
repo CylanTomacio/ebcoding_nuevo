@@ -1,0 +1,104 @@
+/*Diseño de seccion Contacto*/
+
+$color-redes :#60BA51;
+$color-redesHover:  #4d9240;
+
+.contacto {
+    padding: 12px;
+    font-weight: 400;
+}
+
+.contacto article{
+    width: 90%;
+    padding-top: 20px;
+    border-top: 1px solid #cecece;
+}
+
+.campos {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nombre" 
+                         "apellido"
+                         "correo"
+                         "comentarios";
+    font-size: 12px;
+}
+
+.campo{
+    padding: 2px;
+    margin: 5px 0;
+    outline: none;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.2s;
+}
+
+.campo:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.campoNombre {
+    grid-area: nombre;
+}
+
+.campoApellido {
+    grid-area: apellido;
+}
+
+.campoEmail {
+    grid-area: correo;
+}
+
+.campoComentarios {
+    grid-area: comentarios;
+}
+
+.social {
+    font-size: 3rem;
+    padding: 10px 0 10px 0;
+}
+
+$redes: "facebook", "instagram", "github", "linkedin";
+
+@each $red in $redes {
+    .social__#{$red} {
+        color: $color_redes;
+        text-decoration: none;
+        transition: 500ms ease-in-out;
+    }
+
+    .social__#{$red}:hover {
+        color: $color_redesHover;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .campos {
+        height: 350px;
+        padding-top: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 10% 80%;
+        grid-template-areas: "nombre apellido"
+                            "correo correo"
+                            "comentarios comentarios";
+        justify-items: center;
+        align-items: center;
+        grid-gap: 20px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .campoEmail {
+        grid-column: 1 /span 2;
+    }
+    
+    .campoComentarios {
+        grid-column: 1 /span 2;
+    }
+
+}
