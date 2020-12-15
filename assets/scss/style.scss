@@ -22,6 +22,10 @@ $contacto : #434242;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: #727878;
@@ -83,12 +87,16 @@ section {
     width: 120px;
 }
 
+.texto-sombreado {
+    text-shadow: 1px 1px 2px #cecece;
+}
+
 /* Diseño tarjeta de tecnología */
 
 #tecnologias {
     background-color: rgba(97, 186, 81, 0.096);
     padding: 20px;
-
+    text-transform: uppercase;
 }
 
 #tecnologias .tarjeta {
@@ -98,6 +106,7 @@ section {
     padding: 70px 20px 70px 20px;
     border: 1px solid #e9ecef;
     border-radius: none;
+    
 }
 
 .tarjeta__icono--tamano {
@@ -126,6 +135,14 @@ section {
 
 .progress-bar-morado {
     background-color: #563D7C;
+}
+
+.tarjeta__icono--amarillo {
+    color: #EFD81D;
+}
+
+.progress-bar-amarillo {
+    background-color: #EFD81D;
 }
 
 /* Diseño del banner */
