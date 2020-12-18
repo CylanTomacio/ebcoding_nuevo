@@ -3,3 +3,14 @@
 #certificados {
     background-color: #f2f2f2;
 }
+
+.certificados__tarjeta {
+    transition: all .3s ease-in-out;
+}
+
+.certificados__tarjeta:hover {
+    top: -2px;
+    transform: scale(1, 1.05);
+    z-index: 10;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
