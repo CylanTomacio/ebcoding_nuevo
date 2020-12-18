@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex">
+        <meta name="googlebot" content="noindex">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto | ebcoding</title>
+        <meta name="description" content="Conseguirás un formulario de contacto que te permitirá dejar tus datos para comunicarte conmigo o enlazarte con alguna de mis redes sociales.">
+        <meta name="keywords" content="portafolio, desarrollo, diseño, ebcoding, programacion, html, css, js, wordpress, seo">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <script src="https://kit.fontawesome.com/a0f89bdc35.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img class="logoEbcoding" src="../img/eb-logo.png" alt="Logo de ebcoding">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#perfil">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#conocimientos">Conocimientos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#certificados">Certificados</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contacto.html">Contacto<span class="sr-only">(Actual)</span></a>  
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <section id="contacto" class="row">
+                <header class="col-md-12 encabezadosec">
+                    <h2 class="display-5 encabezadosec__titulo">Contáctame</h2>
+                    <p class="encabezadosec__parrafo">Comunícate conmigo, me gustaría mucho saber en qué puedo ayudarte</p>
+                </header>
+                <div class="col-6">
+                    <form action="#">
+                        <div class="campos container">
+                            <div class="row">
+                                <!--Nombre del usuario-->
+                                <div class="col-md-6 form-group d-flex flex-column campoNombre">
+                                    <label for="nombre">Nombre <span class="requerido">*</span></label>
+                                    <input class="campo p-1" type="text" id="nombre" placeholder="Pepito" required>
+                                </div>
+
+                                <!--Apellido del usuario-->
+                                <div class="col-md-6 form-group d-flex flex-column campoApellido">
+                                    <label for="apellido">Apellido <span class="requerido">*</span></label>
+                                    <input class="campo p-1" type="text" id="apellido" placeholder="Perez" required>
+                                </div>
+
+                                <!--Correo del usuario-->
+                                <div class="col-md-6 form-group d-flex flex-column campoEmail">
+                                    <label for="correoElectronico">Correo Electrónico <span class="requerido">*</span></label>
+                                    <input class="campo p-1" type="email" id="correoElectronico" placeholder="tucorreo@ejemplo.com" required>
+                                </div>
+
+                                <!--Teléfono del usuario-->
+                                <div class="col-md-6 form-group d-flex flex-column campoTelefono">
+                                    <label for="telefono">Teléfono</label>
+                                    <input class="campo p-1" type="number" id="telefono" placeholder="3501234567">
+                                </div>
+
+                                <!--Comentarios del usuario-->
+                                <div class="col-md-12 form-group campoComentarios">
+                                    <textarea class="campo" name="comentarios" id="comentarios" cols="40" rows="8" placeholder="Cuéntame sobre tu proyecto"></textarea>
+                                </div>
+                            </div>
+                        </div> 
+                    <input class="boton enviar" type="submit" value="Enviar">
+                    <input class="boton limpiar" type="reset" value="Limpiar">
+                    </form>
+                </div>
+                <div class="col-6" style="border: 1px solid red;">
+                    <div class="social">
+                        <a class="social__facebook" href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a class="social__instagram" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="social__github" href="#">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                        <a class="social__linkedin" href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>   
+
+        <!-- Inicio del footer -->
+        <footer id="footer">
+            <h6 class="footer__titulo">Todos los derechos reservados - Diseñado por Elvis Briceño</h6>
+        </footer><!-- Final del footer -->
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
