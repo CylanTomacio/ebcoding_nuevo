@@ -4,11 +4,11 @@ $color-redes :#60BA51;
 $color-redesHover:  #4d9240;
 
 .campo{
-    padding: 2px;
-    margin: 5px 0;
+    padding: 5px;
+    margin: 20px 0;
     outline: none;
     border: 1px solid #cecece;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: none;
     transition: 0.2s;
 }
@@ -18,6 +18,7 @@ $color-redesHover:  #4d9240;
 }
 
 .social {
+
     font-size: 3rem;
     padding: 10px 0 10px 0;
 }
@@ -35,9 +36,4 @@ $redes: "facebook", "instagram", "github", "linkedin";
         color: $color_redesHover;
         text-decoration: none;
     }
-}
-
-@media screen and (min-width: 768px) {
-
-
 }

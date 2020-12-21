@@ -96,11 +96,11 @@
 
 /*Diseño de seccion Contacto*/
 .campo {
-  padding: 2px;
-  margin: 5px 0;
+  padding: 5px;
+  margin: 20px 0;
   outline: none;
   border: 1px solid #cecece;
-  border-radius: 3px;
+  border-radius: 5px;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: 0.2s;
