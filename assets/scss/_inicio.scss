@@ -11,6 +11,7 @@
 
 #carousel {
     position: relative;
+    width: 100%;
 }
 
 #carousel .overlay {
@@ -28,7 +29,7 @@
 }
 
 .fotoInicio {
-    width: 90px;
+    width: 120px;
     border: 3px solid #cecece;
     box-shadow: 0 0 5px #000;
     border-radius: 50%;
@@ -36,7 +37,7 @@
 
 @media screen and (min-width:461px) {
     .fotoInicio {
-        width: 120px;
+        width: 140px;
     }
 }
 
@@ -45,6 +46,6 @@
         max-height: 70vh;
     }
     .fotoInicio {
-        width: 240px;
+        width: 200px;
     }
 }
